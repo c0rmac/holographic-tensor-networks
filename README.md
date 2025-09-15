@@ -8,6 +8,17 @@
 
 The library provides a robust geometric kernel for constructing complex hyperbolic geometries and a physics engine for simulating the quantum states defined upon them. Its primary goal is to enable the numerical investigation of the AdS/CFT correspondence and the Ryu-Takayanagi formula in generalized settings beyond simple, regular lattices.
 
+## 📚 Documentation
+
+- [Hyperbolic Geometry Theory](./docs/theory/THEORY.md)  
+  Foundations of hyperbolic geometry, Gromov hyperbolicity, and their role in holographic tensor networks.
+
+- [Quantum Mechanics in Hyperbolic Geometry](./docs/theory_quantum/THEORY_QUANTUM.md)  
+  How quantum states, entanglement, and the AdS/CFT correspondence manifest in hyperbolic space.
+
+- [Example Usage](./docs/example_usage/EXAMPLE_USAGE.md)  
+  Step-by-step examples demonstrating geometry construction, tensor network building, and entropy calculations.
+
 ## ✨ Key Features
 
 * **Geometric Kernel**: A powerful `HyperbolicBuilding` class to programmatically generate, store, and analyze the geometry of hyperbolic buildings.
