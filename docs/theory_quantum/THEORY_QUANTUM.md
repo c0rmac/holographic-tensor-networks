@@ -50,7 +50,7 @@ This intuition is formalized using the **density matrix**. For a quantum system 
 
 If we partition this system into two subsystems, A and B, we can find the state of A by performing a **partial trace** over the degrees of freedom in B. This gives us the **reduced density matrix for A**:
 
-$$ \rho_A = \text{Tr}_B(\rho) $$
+$$\rho_A = \text{Tr}_B(\rho)$$
 
 <div align="center">
   <img src="entanglement_partition.png" alt="Entanglement Partition" width="450"/>
@@ -60,7 +60,7 @@ $$ \rho_A = \text{Tr}_B(\rho) $$
 
 The **von Neumann entropy** (or entanglement entropy) of subsystem A is then defined as:
 
-$$ S(A) = -\text{Tr}(\rho_A \log \rho_A) $$
+$$S(A) = -\text{Tr}(\rho_A \log \rho_A)$$
 
 This value is zero if and only if A is not entangled with its complement. It is the precise, quantitative measure of the "quantum-ness" of the correlations between different parts of a system.
 

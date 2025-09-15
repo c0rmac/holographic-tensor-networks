@@ -6,7 +6,7 @@ This document serves as a practical guide to using the holographic tensor networ
 
 The central tool for our investigation is the **Ryu-Takayanagi formula**, which provides a quantitative link between geometry and quantum information. As stated in [`THEORY.md#holographic-connection`](https://www.google.com/search?q=THEORY.md%23holographic-connection), the formula relates the entanglement entropy $S_A$ of a boundary region $A$ to the area of a minimal surface $\gamma_A$ in the bulk:
 
-$$ S_A = \frac{\text{Area}(\gamma_A)}{4G_N} $$
+$$S_A = \frac{\text{Area}(\gamma_A)}{4G_N}$$
 
 Our library is designed to be a "numerical laboratory" where you can construct the geometric bulk, define the quantum state on its boundary, and numerically test this powerful relationship.
 
