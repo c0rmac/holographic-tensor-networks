@@ -1,0 +1,12 @@
+pyproject.toml
+src/holographic_tn/__init__.py
+src/holographic_tn/geometry.py
+src/holographic_tn/physics.py
+src/holographic_tn/tensor.py
+src/holographic_tn.egg-info/PKG-INFO
+src/holographic_tn.egg-info/SOURCES.txt
+src/holographic_tn.egg-info/dependency_links.txt
+src/holographic_tn.egg-info/requires.txt
+src/holographic_tn.egg-info/top_level.txt
+tests/test_contractor_ket_subnetwork.py
+tests/test_cut_edges.py

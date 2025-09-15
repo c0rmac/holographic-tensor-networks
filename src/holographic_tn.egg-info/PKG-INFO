@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: holographic-tn
+Version: 0.1.0
+Summary: A numerical laboratory for studying holographic duality with tensor networks on hyperbolic buildings.
+Author-email: Your Name <you@example.com>
+Project-URL: Homepage, https://github.com/your-username/holographic-tensor-networks
+Project-URL: Bug Tracker, https://github.com/your-username/holographic-tensor-networks/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: tensornetwork
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pybind11; extra == "dev"

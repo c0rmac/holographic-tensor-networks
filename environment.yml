@@ -1,0 +1,24 @@
+name: holographic-tn-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python and numerical libraries
+  - python=3.10
+  - numpy
+  - scipy
+  - networkx
+
+  # C++ backend dependencies for the geometric kernel [cite: 239]
+  - cgal # Recommended C++ library for robust geometry
+  - pybind11 # For creating Python bindings [cite: 245]
+  
+  # For managing pip packages within Conda
+  - pip
+
+  - pip:
+    # The chosen tensor network library [cite: 170]
+    - tensornetwork
+    # A potential dependency for generating hyperbolic tilings [cite: 44]
+    - hypertiling

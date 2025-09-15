@@ -1,0 +1,7 @@
+numpy
+networkx
+tensornetwork
+
+[dev]
+pytest
+pybind11

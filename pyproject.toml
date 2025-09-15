@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holographic-tn"
+version = "0.1.0"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+description = "A numerical laboratory for studying holographic duality with tensor networks on hyperbolic buildings."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy",
+    "networkx",
+    "tensornetwork"  # Recommended library for the tensor network layer [cite: 170]
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pybind11", # For Python/C++ bindings in the geometric kernel [cite: 245]
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your-username/holographic-tensor-networks"
+"Bug Tracker" = "https://github.com/your-username/holographic-tensor-networks/issues"
