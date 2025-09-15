@@ -21,13 +21,13 @@ From a formal perspective, a geometry is a logical system built upon foundationa
 * **The Euclidean System (Axiom of Parallels):** The system of Euclidean geometry is defined by a set of axioms, including one equivalent to Euclid's fifth postulate (often called Playfair's axiom):
     > *For every line L and for every point P that does not lie on L, there exists exactly one line M through P that is parallel to L.*
     In the language of formal logic, this is stated as:
-    $$ \forall L, \forall P \notin L, \exists! M \text{ such that } P \in M \text{ and } L \cap M = \emptyset $$
+   $$\forall L, \forall P \notin L, \exists! M \text{ such that } P \in M \text{ and } L \cap M = \emptyset$$
     The symbol $\exists!$ means "there exists one and only one".
 
 * **The Hyperbolic System (Axiom of Hyperbolic Parallels):** Hyperbolic geometry keeps the other axioms but replaces the parallel postulate with its negation:
     > *For every line L and for every point P that does not lie on L, there exist at least two distinct lines M1 and M2 through P that are parallel to L.*
     The formal statement becomes:
-    $$ \forall L, \forall P \notin L, \exists M_1, M_2 \text{ such that } M_1 \neq M_2, P \in M_1, P \in M_2, \text{ and } L \cap M_1 = \emptyset, L \cap M_2 = \emptyset $$
+   $$\forall L, \forall P \notin L, \exists M_1, M_2 \text{ such that } M_1 \neq M_2, P \in M_1, P \in M_2, \text{ and } L \cap M_1 = \emptyset, L \cap M_2 = \emptyset$$
 
 This demonstrates that the distinction is not merely descriptive but is a fundamental choice at the deepest logical level. By choosing a different axiom, an entire, self-consistent universe of geometric theorems emerges.
 
@@ -45,7 +45,7 @@ Because it's difficult to visualize a negatively curved surface embedded in our 
 ### The Conformal Metric {#conformal-metric}
 
 The model's power comes from its **metric**, which defines distance. An infinitesimal displacement $ds$ is given by:
-$$ ds^2 = \frac{4(dx^2 + dy^2)}{(1 - r^2)^2} \quad \text{where } r^2 = x^2 + y^2 $$
+$$ds^2 = \frac{4(dx^2 + dy^2)}{(1 - r^2)^2} \quad \text{where } r^2 = x^2 + y^2$$
 As a point $(x, y)$ approaches the boundary where $r \to 1$, the denominator approaches zero, causing the hyperbolic distance $ds$ to blow up. This is how an infinite space is mapped to a finite area.
 
 Crucially, the metric is **conformal**: it is a scaling of the Euclidean metric $dx^2 + dy^2$ by a factor $\frac{4}{(1-r^2)^2}$. This means that while lengths are distorted, **angles are preserved**. The angle measured between two intersecting lines in the Poincaré disk is the true hyperbolic angle between them. This property is what makes constructing tessellations possible.
@@ -61,7 +61,7 @@ A "straight line" (a **geodesic**) in this model is the shortest path between tw
 The connection to our library is that a hyperbolic tessellation is built from regular polygons whose sides are **geodesic arcs**. A tessellation is specified by the **Schläfli symbol** $\{p, q\}$, meaning it is a tiling by regular *p*-gons, with *q* of them meeting at each vertex.
 
 Because the space is curved, the angles of these polygons are different from their Euclidean counterparts. The interior angle $\alpha$ of a regular hyperbolic *p*-gon in a $\{p, q\}$ tiling is fixed by the requirement that *q* of them must fit perfectly around a vertex:
-$$ \alpha = \frac{2\pi}{q} $$
+$$\alpha = \frac{2\pi}{q}$$
 For this to form a valid *p*-gon, the sum of its interior angles, $p \times \alpha$, must satisfy the **Gauss-Bonnet theorem**, which relates the area of a polygon to its angles.
 
 Let's consider the `{5, 4}` tiling used in our library:
@@ -90,7 +90,7 @@ In Euclidean geometry, a regular pentagon has 108° angles, so this would be imp
 An **isometry** is a transformation that preserves distances, and thus the entire structure of the geometry. In the Poincaré disk, the orientation-preserving isometries are a class of functions known as **Möbius transformations**. Any such transformation can be represented as a composition of a hyperbolic translation and a rotation.
 
 Using complex numbers where $z = x + iy$, the general form of an isometry is:
-$$ f(z) = e^{i\phi} \frac{z - z_0}{1 - \bar{z_0}z} $$
+$$f(z) = e^{i\phi} \frac{z - z_0}{1 - \bar{z_0}z}$$
 * **Hyperbolic Translation ($z_0$)**: The parameter $z_0$ (a complex number with $|z_0| < 1$) defines a translation that moves the point $z_0$ to the origin. Unlike a Euclidean shift, this is a non-linear transformation that warps the space accordingly.
 * **Rotation ($\phi$)**: The parameter $e^{i\phi}$ represents a standard Euclidean rotation by an angle $\phi$ about the origin.
 
@@ -132,7 +132,7 @@ The visual boundary in the Poincare Disk model is a representation of a deep mat
 
 ### Geodesic Rays and Their Endpoints {#geodesic-rays}
 Imagine standing at a point and shining a laser beam. This beam travels along a **geodesic ray**. In hyperbolic space, two different rays starting from the same point will diverge exponentially fast and never meet again. The Gromov boundary $\partial X$ is the set of "endpoints" for all possible geodesic rays. Two rays, $\gamma_1(t)$ and $\gamma_2(t)$, are considered equivalent (ending at the same boundary point) if they stay a finite distance from each other forever:
-$$ \sup_{t \ge 0} d(\gamma_1(t), \gamma_2(t)) < \infty $$
+$$\sup_{t \ge 0} d(\gamma_1(t), \gamma_2(t)) < \infty$$
 
 <div style="text-align:center;">
     <img src="geodesic_rays_simple_divergence.png" alt="Divergence of geodesic rays" width="500">
@@ -173,7 +173,7 @@ The Gromov boundary is the linchpin connecting the bulk geometry to the boundary
 * **Points as Degrees of Freedom**: Each point on the Gromov boundary corresponds to a degree of freedom (like a qubit) in the boundary's quantum system.
 
 The connection is made quantitative by the Ryu-Takayanagi formula, which relates the entanglement entropy $S_A$ of a boundary region $A$ to the area of a minimal surface $\gamma_A$ in the bulk that ends on the boundary of A:
-$$ S_A = \frac{\text{Area}(\gamma_A)}{4G_N} $$
+$$S_A = \frac{\text{Area}(\gamma_A)}{4G_N}$$
 When our `HyperbolicBuilding` class constructs a tiling, it creates a discrete version of this bulk space. A key computational challenge is to algorithmically find the minimal surface $\gamma_A$.
 
 ### Finding the Minimal Surface: A Computational Note {#geodesic-computation}
