@@ -181,7 +181,7 @@ If you use `holographic_tn` in your research, please cite the original paper tha
 
 And this software implementation:
 
-> [Your Name/Group]. (2025). *holographic_tn: A Python Library for Holographic Tensor Networks on Hyperbolic Buildings*. [https://github.com/example/holographic_tn](https://github.com/example/holographic_tn).
+> [Cormac Kinsella]. (2025). *holographic_tn: A Python Library for Holographic Tensor Networks on Hyperbolic Buildings*. [https://github.com/example/holographic_tn](https://github.com/example/holographic_tn).
 
 ## 📄 License
 
