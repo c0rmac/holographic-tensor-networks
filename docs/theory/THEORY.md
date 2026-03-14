@@ -173,7 +173,9 @@ The Gromov boundary is the linchpin connecting the bulk geometry to the boundary
 * **Points as Degrees of Freedom**: Each point on the Gromov boundary corresponds to a degree of freedom (like a qubit) in the boundary's quantum system.
 
 The connection is made quantitative by the Ryu-Takayanagi formula, which relates the entanglement entropy $S_A$ of a boundary region $A$ to the area of a minimal surface $\gamma_A$ in the bulk that ends on the boundary of A:
+
 $$S_A = \frac{\text{Area}(\gamma_A)}{4G_N}$$
+
 When our `HyperbolicBuilding` class constructs a tiling, it creates a discrete version of this bulk space. A key computational challenge is to algorithmically find the minimal surface $\gamma_A$.
 
 ### Finding the Minimal Surface: A Computational Note {#geodesic-computation}
